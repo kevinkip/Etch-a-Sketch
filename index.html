@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-a-Sketch</title>
     <link rel="stylesheet" href="./styles.css">
+    <script defer src="main.js"></script>
     <link rel="icon" type="image/jpg" href="./images/etch-a-sketch.jpg">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">    <script defer src="./app.js"></script>
 </head>
@@ -17,11 +18,22 @@
         <div class="canvas">
 
         </div>
+        <div class="buttons">
+            <button>Black</button>
+            <button>White</button>
+            <button>RGB-Rainbow</button>
+            <button>Reset</button>
+        </div>        
         <div class="input">
             <label for="squareNum">Number of squares: </label>
-            <input type="text" id="squareNum" name="squareNum">
-            <input type="submit" value="Submit">
+            <input 
+            type="text" 
+            id="squareNum" 
+            name="squareNum" 
+            onchange="changeSize(this.value)">
+            <button>Size Change</button>
         </div>
+
     </main>
     <footer>
         Built and Designed by 
