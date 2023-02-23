@@ -19,17 +19,17 @@
 
         </div>
         <div class="buttons">
-            <button>Black</button>
-            <button>White</button>
-            <button>RGB-Rainbow</button>
-            <button>Reset</button>
+            <button onclick="changeColor('black')">Black</button>
+            <button onclick="changeColor('gray')">Gray</button>
+            <button onclick="changeColor('random')">RGB-Rainbow</button>
+            <button onclick="changeColor('white')">Erasor</button>
+            <button onclick="resetBoard()">Reset</button>
         </div>        
         <div class="input">
             <label for="squareNum">Number of squares: </label>
             <input 
             type="text" 
-            id="squareNum" 
-            name="squareNum" 
+            value="16"
             onchange="changeSize(this.value)">
             <button>Size Change</button>
         </div>
