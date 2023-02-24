@@ -1,3 +1,5 @@
+
+
 html{
     margin: 0;
     height: 100%;
@@ -18,12 +20,28 @@ main{
     align-items: center;
     flex-direction: column;
     margin: auto;
+    gap: 10px;
 }
 
 .canvas{
     display: grid;
     width: 500px;
     height: 500px;
+    box-shadow: 5px 5px 5px lightgrey;
+    border-style: solid;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 20px;
+    gap: 5px;
+}
+
+#btn:hover{
+    border-color: black;
+    background-color: black;
 }
 
 .header{

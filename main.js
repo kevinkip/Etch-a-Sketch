@@ -1,5 +1,7 @@
+
 let color = 'black';
 let click = true;
+
 
 function fillBoard(size){
     let canvas = document.querySelector('.canvas');
@@ -18,7 +20,8 @@ function fillBoard(size){
     }
 };
 
-function changeSize(input){
+function changeSize(num){
+    let input = document.getElementById(num).value;
     if(input >=2 && input <= 100){
         fillBoard(input);        
     } else {
@@ -29,16 +32,20 @@ function changeSize(input){
 //next attempt to make the HSL color transition smooth
 function colorSquare(){
     if(click){
-        if(color === 'random'){
-            const hue = Math.random() * 360;
-            const saturation = 100;
-            const lightness = 50;
-            this.style.backgroundColor = `hsl(${hue}, ${saturation}%, ${lightness}%)`;
-            console.log(this.style.backgroundColor);
-        } else {
-            this.style.backgroundColor = color;
-    
-        }
+        // let square = document.querySelector('div');
+        // square.addEventListener('mouseover', ()=> {
+            if(color === 'random'){
+                const hue = Math.random() * 360;
+                const saturation = 100;
+                const lightness = 50;
+                this.style.backgroundColor = `hsl(${hue}, ${saturation}%, ${lightness}%)`;
+                console.log(this.style.backgroundColor);
+            } else {
+                this.style.backgroundColor = color;
+        
+            }
+
+        // })
     }
 }
 
@@ -57,3 +64,5 @@ document.querySelector('body').addEventListener('click', (e) => {
         click = !click;
     }
 });
+
+fillBoard(16);
