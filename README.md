@@ -9,7 +9,7 @@
   </a>
 </p>
 
-![]()
+![](https://github.com/kevinkip/Etch-a-Sketch/blob/main/images/Etch-A-Sketch.gif)
 
 # What was my motivation?
 - I was 10 years old when I first played with an Etch-A-Sketch. They seemed really cool for what you could do with them. I wasn't that great. But the idea of making one on a program seemed like a fun idea. 
